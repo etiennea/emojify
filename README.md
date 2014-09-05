@@ -21,6 +21,7 @@ jQuery
 Notes
 -----
 Emoji's get the emoji css class added. Here is an example css.
+
     <style>
         .emoji {
             width: 20px;
