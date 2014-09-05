@@ -7,11 +7,11 @@ Please host your emoticons yourself.
 
 Usage
 -----
-    <p class="contains-emoticons">I fking love hugs😍</p>
+    <p class="emojify">I fking love hugs😍</p>
     
     <script>
     $(function()){
-      $('.contains-emoticons').emojify({url: 'path/to/your/emoticons'});
+      $('.emojify').emojify({url: 'path/to/your/emoticons'});
     })
     </script>
     
@@ -29,3 +29,5 @@ Emoji's get the emoji css class added. Here is an example css.
             vertical-align: text-bottom;
         }
     </style>
+
+Selector must be a css class

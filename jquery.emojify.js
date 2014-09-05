@@ -1,4 +1,3 @@
-
 (function ( $ ) {
     $.fn.emojify = function(options) {
 
@@ -10,7 +9,7 @@
         function emoji_replacer(str, p1) {
             return decimalToHex(ord(p1.toString(16))).toString().toLowerCase().replace(
                 /^([\da-f]+)$/i,
-                '<img src="'+settings.url+'$1.png" alt="emoji" class="emoji"/>'
+                    '<img src="'+settings.url+'$1.png" alt="emoji" class="emoji" style="width: 20px;vertical-align: text-bottom;"/>'
             );
         }
 
@@ -56,9 +55,12 @@
             return code;
         }
 
-        var stringInput = this.text();
-        var replaceRegex = new RegExp(/([\u0080-\uFFFF]{1,1}[\u0080-\uFFFF])/g);
-        return stringInput.replace(replaceRegex, emoji_replacer);
+        var selector = this.selector.replace('.','');
+        return this.each(function() {
+            var stringInput = $(this).html();
+            var replaceRegex = new RegExp(/([\u0080-\uFFFF]{1,1}[\u0080-\uFFFF])/g);
+            $(this).html(stringInput.replace(replaceRegex, emoji_replacer)).removeClass(selector);
+        })
 
     };
 }( jQuery ));
