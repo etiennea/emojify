@@ -6,7 +6,6 @@ Please host your emoticons yourself.
 
 Usage
 -----
-
     <p class="contains-emoticons">I fking love hugs😍</p>
     
     <script>
@@ -18,3 +17,13 @@ Usage
 Requirements
 ------------
 jQuery
+
+Notes
+-----
+Emoji's get the emoji css class added. Here is an example css.
+    <style>
+        .emoji {
+            width: 20px;
+            vertical-align: text-bottom;
+        }
+    </style>
