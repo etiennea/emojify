@@ -1,0 +1,23 @@
+{
+  "name": "emojify",
+  "version": "0.0.1",
+  "homepage": "https://github.com/etiennea/emojify",
+  "authors": [
+    "Etienne Adriaenssen <etiennea@gmail.com>"
+  ],
+  "description": "A simple jquery plugin to make emoticons from iOS visible on the web",
+  "main": "jquery.emojify.js",
+  "keywords": [
+    "emoji",
+    "ios",
+    "jquery"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

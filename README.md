@@ -1,7 +1,8 @@
 emojify
 =======
 
-A simple jquery plugin to make emoticons from iOS visible on the web. 
+A simple jquery plugin to make emoticons from iOS visible on the web, by replacing unicode characters with images. Currently supports 822 emoticons. Pull requests welcome.
+
 Please host your emoticons yourself.
 
 Usage
